@@ -1,0 +1,185 @@
+/* Reset */
+* {
+  margin: 0; padding: 0; box-sizing: border-box;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #fff;
+  color: #333;
+  line-height: 1.5;
+}
+
+/* Header */
+header {
+  background: #111;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 5%;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.logo img {
+  height: 55px;
+}
+nav a {
+  color: #fff;
+  margin-left: 2rem;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+nav a.active,
+nav a:hover {
+  color: #f7a32b;
+}
+
+/* Page Header */
+.page-header {
+  text-align: center;
+  padding: 4rem 5% 2rem;
+}
+.page-header h1 {
+  font-size: 2.8rem;
+  margin-bottom: 0.5rem;
+  color: #222;
+}
+.page-header p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* Services Grid */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 0 5% 4rem;
+}
+
+.service-card {
+  background: #fdfdfd;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+}
+
+.service-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 10px 30px rgba(247, 163, 43, 0.3);
+}
+
+.service-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  transition: filter 0.3s;
+}
+.service-card:hover img {
+  filter: brightness(0.8);
+}
+
+.content {
+  padding: 1.5rem 1.2rem 2rem;
+  text-align: center;
+}
+.content i {
+  font-size: 2.4rem;
+  color: #f7a32b;
+  margin-bottom: 0.7rem;
+}
+.content h3 {
+  margin-bottom: 0.6rem;
+  font-weight: 600;
+  color: #222;
+}
+.content p {
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+/* Footer */
+footer {
+  background: #111;
+  color: #ccc;
+  padding: 3rem 5% 1rem;
+}
+.footer-top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.footer-top div {
+  margin-bottom: 1rem;
+}
+.footer-top a {
+  color: #f7a32b;
+  transition: color 0.3s;
+}
+.footer-top a:hover {
+  color: #f5b84d;
+}
+.footer-bottom {
+  text-align: center;
+  font-size: 0.9rem;
+  border-top: 1px solid #333;
+  padding-top: 1rem;
+}
+
+/* Responsive tweaks */
+@media(max-width: 600px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+  nav a {
+    margin-left: 1rem;
+  }
+}
+
+/* Botão hambúrguer */
+.nav-toggle {
+  display: none;
+  background: transparent;
+  border: none;
+  color: #f7a32b;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* Mobile: esconder menu normal e mostrar hambúrguer */
+@media (max-width: 768px) {
+  nav.nav-menu {
+    position: fixed;
+    top: 60px; /* logo + header */
+    right: -100%; /* esconde */
+    background: #111;
+    height: calc(100vh - 60px);
+    width: 250px;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 1.5rem;
+    transition: right 0.3s ease-in-out;
+    z-index: 1001;
+  }
+
+  nav.nav-menu.open {
+    right: 0; /* aparece */
+  }
+
+  nav.nav-menu a {
+    font-size: 1.2rem;
+    color: #f7a32b;
+    font-weight: 600;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+}

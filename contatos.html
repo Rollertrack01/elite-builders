@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Elite Builders | Contatos</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <header>
+    <div class="logo fade-in">
+      <a href="index.html"><img src="img/logo-oficial.png" alt="Elite Builders Logo" /></a>
+    </div>
+
+    <nav class="nav-menu fade-in delay-1" id="nav-menu">
+      <a href="index.html">Lar</a>
+      <a href="servicos.html">Serviços</a>
+      <a href="sobre.html">Sobre Nós</a>
+      <a href="contatos.html" class="active">Contatos</a>
+    </nav>
+
+    <button class="nav-toggle fade-in delay-2" id="nav-toggle" aria-label="Abrir menu">
+      <i class="fas fa-bars"></i>
+    </button>
+  </header>
+
+  <section class="page-header">
+    <h1 class="fade-in">Contacte-nos</h1>
+    <p class="fade-in delay-1">Estamos prontos para ouvir e construir o seu projeto.</p>
+  </section>
+
+  <section class="contact-section fade-in delay-2">
+    <div class="contact-box fade-in delay-3">
+     <form id="contact-form">
+  <label for="nome" class="fade-in delay-4">Nome</label>
+  <input type="text" id="nome" name="nome" placeholder="Seu nome" required class="fade-in delay-4" />
+
+  <label for="email" class="fade-in delay-5">Email</label>
+  <input type="email" id="email" name="email" placeholder="Seu Email" required class="fade-in delay-5" />
+
+  <label for="mensagem" class="fade-in delay-6">Mensagem</label>
+  <textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem aqui" required class="fade-in delay-6"></textarea>
+
+  <button type="submit" class="btn fade-in delay-7">Enviar</button>
+</form>
+
+    </div>
+  </section>
+
+  <footer id="site-footer">
+    <div class="footer-content">
+      <div class="footer-column">
+        <h4>Elite Builders</h4>
+        <p>Construção Civil e Obras Públicas</p>
+      </div>
+      <div class="footer-column">
+        <h5>Contactos</h5>
+        <p>Sede: Nampula, Moçambique<br>Bairro: Central</p>
+        <p>Telefone: +258 87 077 9922</p>
+        <p>Email: <a href="mailto:gentilfranciscomaia@gmail.com">gentilfranciscomaia@gmail.com</a></p>
+      </div>
+      <div class="footer-column">
+        <h5>Áreas de Atuação</h5>
+        <ul>
+          <li>Edifícios e Monumentos</li>
+          <li>Furos de Água</li>
+          <li>Estradas e Pavimentação</li>
+          <li>Reservatórios e Hidráulica</li>
+          <li>Urbanização e Limpeza de Terrenos</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-left">
+        <p>Desenvolvido por Rollertrack</p>
+      </div>
+      <div class="footer-right">
+        <p>&copy; 2025 Elite Builders. Todos os Direitos Reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.emailjs.com/sdk/3.2/email.min.js"></script>
+
+  <script src="js/menu.js"></script>
+</body>
+</html>
