@@ -63,3 +63,12 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
+
+// Fechar menu ao clicar em um link
+const navLinks = document.querySelectorAll('.nav-menu a');
+navLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    navMenu.classList.remove('open');
+    btnMobile.setAttribute('aria-expanded', 'false');
+  });
+});
