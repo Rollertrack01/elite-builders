@@ -1,11 +1,24 @@
 // === Menu Mobile ===
-const btnMobile = document.getElementById("nav-toggle");
-const navMenu = document.getElementById("nav-menu");
+document.addEventListener('DOMContentLoaded', () => {
+  const btnMobile = document.getElementById("nav-toggle");
+  const navMenu = document.getElementById("nav-menu");
 
-btnMobile.addEventListener("click", () => {
-  navMenu.classList.toggle("open");
-  const isExpanded = btnMobile.getAttribute("aria-expanded") === "true";
-  btnMobile.setAttribute("aria-expanded", !isExpanded);
+  if (btnMobile && navMenu) {
+    btnMobile.addEventListener("click", () => {
+      navMenu.classList.toggle("open");
+      const isExpanded = btnMobile.getAttribute("aria-expanded") === "true";
+      btnMobile.setAttribute("aria-expanded", !isExpanded);
+    });
+
+    // Fechar menu ao clicar em um link
+    const navLinks = document.querySelectorAll('.nav-menu a');
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        navMenu.classList.remove('open');
+        btnMobile.setAttribute('aria-expanded', 'false');
+      });
+    });
+  }
 });
 
 // === Animação Scroll ===
@@ -24,17 +37,23 @@ window.addEventListener("load", showOnScroll);
 // === Slider de Imagens ===
 document.querySelectorAll('.img-slider').forEach(slider => {
   const images = slider.querySelectorAll('img');
-  let current = 0;
-  setInterval(() => {
-    images[current].classList.remove('active');
-    current = (current + 1) % images.length;
-    images[current].classList.add('active');
-  }, 5000); // troca a cada 5 segundos
+  if (images.length > 0) {
+    let current = 0;
+    images[0].classList.add('active'); // Garante que a primeira imagem está ativa
+    setInterval(() => {
+      images[current].classList.remove('active');
+      current = (current + 1) % images.length;
+      images[current].classList.add('active');
+    }, 5000);
+  }
 });
 
 // === Envio do Formulário via EmailJS ===
 document.addEventListener('DOMContentLoaded', () => {
-  emailjs.init('c6wlGTr_puOZynphf'); // coloque seu User ID público aqui
+  // Verificar se EmailJS está disponível
+  if (typeof emailjs !== 'undefined') {
+    emailjs.init('c6wlGTr_puOZynphf');
+  }
 
   const form = document.getElementById('contact-form');
 
@@ -42,7 +61,12 @@ document.addEventListener('DOMContentLoaded', () => {
     form.addEventListener('submit', function(event) {
       event.preventDefault();
 
-      // Pegando os valores pelo name dos inputs
+      // Verificar se EmailJS está carregado
+      if (typeof emailjs === 'undefined') {
+        alert('Erro: EmailJS não carregado. Verifique sua conexão.');
+        return;
+      }
+
       const nome = this.nome.value;
       const email = this.email.value;
       const mensagem = this.mensagem.value;
@@ -62,13 +86,4 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
   }
-});
-
-// Fechar menu ao clicar em um link
-const navLinks = document.querySelectorAll('.nav-menu a');
-navLinks.forEach(link => {
-  link.addEventListener('click', () => {
-    navMenu.classList.remove('open');
-    btnMobile.setAttribute('aria-expanded', 'false');
-  });
 });
