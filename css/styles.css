@@ -489,8 +489,7 @@ footer {
     font-size: 0.95rem;
   }
 }
-
-/* Mobile */
+/* Mobile */
 .nav-toggle {
   display: none;
   background: none;
@@ -519,7 +518,7 @@ footer {
     box-shadow: -2px 0 10px rgba(0,0,0,0.3);
   }
 
-  .nav-menu.active {
+  .nav-menu.open {
     right: 0;
   }
 
@@ -546,6 +545,15 @@ footer {
     font-size: 0.95rem;
   }
 }
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 5rem 1rem;
+  }
+
+  .hero-content h1 {
+    font-size: 1.5rem;
+  }
 
   .btn {
     padding: 0.6rem 1.2rem;
