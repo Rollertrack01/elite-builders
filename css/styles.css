@@ -24,6 +24,7 @@ a:hover {
   color: #f7a32b;
 }
 
+/* === Header === */
 header {
   background-color: #222;
   color: #fff;
@@ -34,6 +35,7 @@ header {
   position: sticky;
   top: 0;
   z-index: 1000;
+  min-height: 80px;
 }
 
 .page-header,
@@ -66,15 +68,19 @@ header {
   color: #f7a32b;
 }
 
-#btn-mobile {
+.nav-toggle {
   display: none;
   background: none;
   border: none;
   color: #f7a32b;
   font-size: 1.8rem;
   cursor: pointer;
+  position: relative;
+  z-index: 1200;
+  padding: 0.5rem;
 }
 
+/* === Hero === */
 .hero {
   position: relative;
   background: url('/img/capa.jpg') center/cover no-repeat fixed;
@@ -186,6 +192,7 @@ header {
   line-height: 1.5;
 }
 
+/* === Services === */
 .services-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -238,6 +245,7 @@ header {
   margin-bottom: 0.5rem;
 }
 
+/* === About === */
 .about {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -265,6 +273,7 @@ header {
   margin-bottom: 1rem;
 }
 
+/* === Sobre Nós === */
 .sobre-nos .container {
   max-width: 900px;
   margin: 0 auto;
@@ -298,6 +307,7 @@ header {
   color: #222;
 }
 
+/* === Contact === */
 .contact-section {
   display: flex;
   justify-content: center;
@@ -329,7 +339,8 @@ header {
 }
 
 .contact-box input,
-.contact-box textarea {
+.contact-box textarea,
+.contact-box select {
   padding: 0.8rem;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -340,35 +351,10 @@ header {
 }
 
 .contact-box input:focus,
-.contact-box textarea:focus {
+.contact-box textarea:focus,
+.contact-box select:focus {
   border-color: #f7a32b;
   outline: none;
-}
-
-/* === Botão de envio do formulário === */
-.btn {
-  background: linear-gradient(135deg, #f7a32b, #f5b84d);
-  color: #fff;
-  border: none;
-  padding: 0.9rem 2rem;
-  border-radius: 50px;
-  font-weight: 700;
-  cursor: pointer;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  box-shadow: 0 3px 8px rgba(0,0,0,0.2);
-  transition: all 0.3s ease;
-}
-
-.btn:hover {
-  background: linear-gradient(135deg, #d88a1f, #f7a32b);
-  transform: scale(1.05);
-  box-shadow: 0 5px 12px rgba(0,0,0,0.25);
-}
-
-.btn:active {
-  transform: scale(0.98);
-  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
 }
 
 .contact-info {
@@ -414,6 +400,426 @@ header {
   color: #f7a32b;
 }
 
+/* === NOVOS RECURSOS === */
+
+/* === WhatsApp Flutuante === */
+.whatsapp-float {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: #25D366;
+  color: #fff;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  z-index: 999;
+  transition: all 0.3s ease;
+  animation: pulse 2s infinite;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+  background: #128C7E;
+}
+
+@keyframes pulse {
+  0%, 100% { box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4); }
+  50% { box-shadow: 0 4px 20px rgba(37, 211, 102, 0.8); }
+}
+
+/* === Botão Voltar ao Topo === */
+.back-to-top {
+  position: fixed;
+  bottom: 100px;
+  right: 30px;
+  background: #f7a32b;
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  z-index: 998;
+  transition: all 0.3s ease;
+}
+
+.back-to-top.show {
+  display: flex;
+}
+
+.back-to-top:hover {
+  background: #d88a1f;
+  transform: translateY(-5px);
+}
+
+/* === Galeria de Projetos === */
+.portfolio-section {
+  padding: 4rem 5%;
+  background: #f9f9f9;
+}
+
+.portfolio-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: #222;
+}
+
+.portfolio-filters {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.filter-btn {
+  background: #fff;
+  border: 2px solid #f7a32b;
+  color: #f7a32b;
+  padding: 0.6rem 1.5rem;
+  margin: 0.5rem;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  background: #f7a32b;
+  color: #fff;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.portfolio-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.portfolio-item:hover {
+  transform: scale(1.03);
+}
+
+.portfolio-item img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+}
+
+.portfolio-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+  color: #fff;
+  padding: 2rem 1.5rem;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+}
+
+.portfolio-item:hover .portfolio-overlay {
+  transform: translateY(0);
+}
+
+.portfolio-overlay h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+}
+
+.portfolio-overlay p {
+  font-size: 0.95rem;
+  opacity: 0.9;
+}
+
+/* === Lightbox === */
+.lightbox {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.95);
+  z-index: 2000;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.lightbox.active {
+  display: flex;
+}
+
+.lightbox-content {
+  max-width: 90%;
+  max-height: 90%;
+  position: relative;
+}
+
+.lightbox-content img {
+  max-width: 100%;
+  max-height: 90vh;
+  border-radius: 8px;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: -40px;
+  right: 0;
+  background: #f7a32b;
+  color: #fff;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.lightbox-close:hover {
+  background: #d88a1f;
+  transform: rotate(90deg);
+}
+
+/* === Depoimentos === */
+.testimonials-section {
+  padding: 4rem 5%;
+  background: #fff;
+  text-align: center;
+}
+
+.testimonials-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: #222;
+}
+
+.testimonials-slider {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.testimonial-card {
+  background: #f9f9f9;
+  padding: 3rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  display: none;
+}
+
+.testimonial-card.active {
+  display: block;
+  animation: fadeIn 0.5s ease;
+}
+
+.testimonial-text {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #555;
+  margin-bottom: 2rem;
+  line-height: 1.8;
+}
+
+.testimonial-author {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.author-image {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #f7a32b;
+}
+
+.author-info h4 {
+  color: #222;
+  margin-bottom: 0.3rem;
+}
+
+.author-info p {
+  color: #777;
+  font-size: 0.9rem;
+}
+
+.testimonial-nav {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.testimonial-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #ccc;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.testimonial-dot.active {
+  background: #f7a32b;
+  width: 30px;
+  border-radius: 6px;
+}
+
+/* === Estatísticas === */
+.stats-section {
+  background: linear-gradient(135deg, #222, #444);
+  color: #fff;
+  padding: 4rem 5%;
+  text-align: center;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 3rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.stat-card {
+  padding: 2rem;
+}
+
+.stat-number {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #f7a32b;
+  margin-bottom: 0.5rem;
+}
+
+.stat-label {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+.stat-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #f7a32b;
+}
+
+/* === FAQ === */
+.faq-section {
+  padding: 4rem 5%;
+  background: #f9f9f9;
+}
+
+.faq-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: #222;
+}
+
+.faq-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  background: #fff;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  overflow: hidden;
+}
+
+.faq-question {
+  padding: 1.5rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  color: #222;
+  transition: background 0.3s ease;
+}
+
+.faq-question:hover {
+  background: #f9f9f9;
+}
+
+.faq-question i {
+  color: #f7a32b;
+  transition: transform 0.3s ease;
+}
+
+.faq-item.active .faq-question i {
+  transform: rotate(180deg);
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+  padding: 0 1.5rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.faq-item.active .faq-answer {
+  max-height: 500px;
+  padding: 0 1.5rem 1.5rem;
+}
+
+/* === Preloader === */
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  transition: opacity 0.5s ease;
+}
+
+.preloader.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.preloader-logo {
+  width: 100px;
+  animation: logoSpin 2s ease-in-out infinite;
+}
+
+@keyframes logoSpin {
+  0%, 100% { transform: scale(1) rotate(0deg); }
+  50% { transform: scale(1.1) rotate(180deg); }
+}
+
+/* === Footer === */
 footer {
   background: #222;
   color: #ccc;
@@ -476,6 +882,36 @@ footer {
   text-align: right;
 }
 
+/* === Animações === */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease forwards;
+}
+
+.fade-in.delay-1 { animation-delay: 0.3s; }
+.fade-in.delay-2 { animation-delay: 0.6s; }
+.fade-in.delay-3 { animation-delay: 0.9s; }
+.fade-in.delay-4 { animation-delay: 1.2s; }
+.fade-in.delay-5 { animation-delay: 1.5s; }
+.fade-in.delay-6 { animation-delay: 1.8s; }
+.fade-in.delay-7 { animation-delay: 2.1s; }
+.fade-in.delay-8 { animation-delay: 2.4s; }
+.fade-in.delay-9 { animation-delay: 2.7s; }
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* === Responsivo === */
 @media (max-width: 992px) {
   .hero-content h1 {
     font-size: 2.2rem;
@@ -488,15 +924,6 @@ footer {
   nav a {
     font-size: 0.95rem;
   }
-}
-/* Mobile */
-.nav-toggle {
-  display: none;
-  background: none;
-  border: none;
-  color: #f7a32b;
-  font-size: 1.8rem;
-  cursor: pointer;
 }
 
 @media (max-width: 768px) {
@@ -544,6 +971,36 @@ footer {
   .hero-content p {
     font-size: 0.95rem;
   }
+
+  .whatsapp-float {
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+    bottom: 20px;
+    right: 20px;
+  }
+
+  .back-to-top {
+    width: 45px;
+    height: 45px;
+    bottom: 85px;
+    right: 20px;
+  }
+
+  .stat-number {
+    font-size: 2.5rem;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .footer-left p,
+  .footer-right p {
+    text-align: center;
+  }
 }
 
 @media (max-width: 480px) {
@@ -559,47 +1016,12 @@ footer {
     padding: 0.6rem 1.2rem;
     font-size: 0.85rem;
   }
-}
 
-.fade-in {
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeInUp 1s ease forwards;
-}
+  .portfolio-item img {
+    height: 200px;
+  }
 
-.fade-in.delay-1 {
-  animation-delay: 0.3s;
-}
-
-.fade-in.delay-2 {
-  animation-delay: 0.6s;
-}
-
-.fade-in.delay-3 {
-  animation-delay: 0.9s;
-}
-
-.fade-in.delay-4 {
-  animation-delay: 1.2s;
-}
-
-.fade-in.delay-5 {
-  animation-delay: 1.5s;
-}
-
-.fade-in.delay-6 {
-  animation-delay: 1.8s;
-}
-
-.fade-in.delay-7 {
-  animation-delay: 2.1s;
-}
-
-@keyframes fadeInUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
+  .testimonial-text {
+    font-size: 1rem;
   }
 }
-
-
