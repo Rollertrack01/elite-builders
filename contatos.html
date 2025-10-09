@@ -4,11 +4,18 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Elite Builders | Contatos</title>
+  <meta name="description" content="Entre em contato com Elite Builders. Telefone, email, WhatsApp. Atendimento em Nampula, Moçambique.">
+  <meta name="keywords" content="contato elite builders, telefone, email, whatsapp, nampula, moçambique">
   <link rel="stylesheet" href="css/styles.css" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body>
+
+  <!-- Preloader -->
+  <div class="preloader">
+    <img src="img/logo-oficial.png" alt="Loading" class="preloader-logo" />
+  </div>
 
   <header>
     <div class="logo fade-in">
@@ -18,6 +25,7 @@
     <nav class="nav-menu fade-in delay-1" id="nav-menu">
       <a href="index.html">Lar</a>
       <a href="servicos.html">Serviços</a>
+      <a href="portfolio.html">Portfolio</a>
       <a href="sobre.html">Sobre Nós</a>
       <a href="contatos.html" class="active">Contatos</a>
     </nav>
@@ -28,27 +36,230 @@
   </header>
 
   <section class="page-header">
-    <h1 class="fade-in">Contacte-nos</h1>
+    <h1 class="titulo-centralizado fade-in">Contacte-nos</h1>
     <p class="fade-in delay-1">Estamos prontos para ouvir e construir o seu projeto.</p>
   </section>
 
   <section class="contact-section fade-in delay-2">
+    
+    <!-- Formulário de Contato -->
     <div class="contact-box fade-in delay-3">
-     <form id="contact-form">
-  <label for="nome" class="fade-in delay-4">Nome</label>
-  <input type="text" id="nome" name="nome" placeholder="Seu nome" required class="fade-in delay-4" />
+      <h2>Envie sua Mensagem</h2>
+      <form id="contact-form">
+        <label for="nome">Nome Completo *</label>
+        <input type="text" id="nome" name="nome" placeholder="Seu nome" required />
 
-  <label for="email" class="fade-in delay-5">Email</label>
-  <input type="email" id="email" name="email" placeholder="Seu Email" required class="fade-in delay-5" />
+        <label for="email">Email *</label>
+        <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required />
 
-  <label for="mensagem" class="fade-in delay-6">Mensagem</label>
-  <textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem aqui" required class="fade-in delay-6"></textarea>
+        <label for="telefone">Telefone/WhatsApp</label>
+        <input type="tel" id="telefone" name="telefone" placeholder="+258 XX XXX XXXX" />
 
-  <button type="submit" class="btn fade-in delay-7">Enviar</button>
-</form>
+        <label for="assunto">Assunto</label>
+        <input type="text" id="assunto" name="assunto" placeholder="Sobre o que deseja falar?" />
+
+        <label for="mensagem">Mensagem *</label>
+        <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem aqui..." required></textarea>
+
+        <button type="submit" class="btn">
+          <i class="fas fa-paper-plane"></i> Enviar Mensagem
+        </button>
+      </form>
+    </div>
+
+    <!-- Informações de Contato -->
+    <div class="contact-info fade-in delay-4">
+      <h2>Informações de Contacto</h2>
+      
+      <div style="margin-bottom: 2rem;">
+        <p style="display: flex; align-items: center; gap: 10px; margin-bottom: 0.5rem;">
+          <i class="fas fa-phone" style="color: #f7a32b; font-size: 1.2rem;"></i> 
+          <strong>Telefone:</strong>
+        </p>
+        <p style="margin-left: 2rem;">
+          <a href="tel:+258870779922">+258 87 077 9922</a>
+        </p>
+      </div>
+
+      <div style="margin-bottom: 2rem;">
+        <p style="display: flex; align-items: center; gap: 10px; margin-bottom: 0.5rem;">
+          <i class="fab fa-whatsapp" style="color: #25D366; font-size: 1.2rem;"></i> 
+          <strong>WhatsApp:</strong>
+        </p>
+        <p style="margin-left: 2rem;">
+          <a href="https://wa.me/258870779922" target="_blank">+258 87 077 9922</a>
+        </p>
+      </div>
+
+      <div style="margin-bottom: 2rem;">
+        <p style="display: flex; align-items: center; gap: 10px; margin-bottom: 0.5rem;">
+          <i class="fas fa-envelope" style="color: #f7a32b; font-size: 1.2rem;"></i> 
+          <strong>Email:</strong>
+        </p>
+        <p style="margin-left: 2rem;">
+          <a href="mailto:gentilfranciscomaia@gmail.com">gentilfranciscomaia@gmail.com</a>
+        </p>
+      </div>
+
+      <div style="margin-bottom: 2rem;">
+        <p style="display: flex; align-items: center; gap: 10px; margin-bottom: 0.5rem;">
+          <i class="fas fa-map-marker-alt" style="color: #f7a32b; font-size: 1.2rem;"></i> 
+          <strong>Localização:</strong>
+        </p>
+        <p style="margin-left: 2rem;">
+          Nampula, Moçambique<br>
+          Bairro Central
+        </p>
+      </div>
+
+      <div style="margin-top: 2rem; padding: 1.5rem; background: #f9f9f9; border-radius: 8px;">
+        <h3 style="margin-bottom: 1rem; color: #f7a32b; display: flex; align-items: center; gap: 10px;">
+          <i class="fas fa-clock"></i> Horário de Atendimento
+        </h3>
+        <p><strong>Segunda a Sexta:</strong> 08:00 - 17:00</p>
+        <p><strong>Sábado:</strong> 08:00 - 12:00</p>
+        <p><strong>Domingo:</strong> Fechado</p>
+      </div>
+
+      <div class="social-icons" style="margin-top: 2rem;">
+        <a href="https://wa.me/258870779922" target="_blank" aria-label="WhatsApp" style="color: #25D366;">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="#" target="_blank" aria-label="Facebook" style="color: #1877F2;">
+          <i class="fab fa-facebook"></i>
+        </a>
+        <a href="#" target="_blank" aria-label="Instagram" style="color: #E4405F;">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="#" target="_blank" aria-label="LinkedIn" style="color: #0A66C2;">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Outras Formas de Contato -->
+  <section class="highlights" style="background: #f9f9f9;">
+    <h2>Outras Formas de nos Contactar</h2>
+    <div class="grid">
+      
+      <div class="highlight-card">
+        <i class="fas fa-file-invoice icon"></i>
+        <h3>Pedir Orçamento</h3>
+        <p>Preencha nosso formulário detalhado e receba um orçamento em até 24 horas.</p>
+        <a href="orcamento.html" class="btn" style="margin-top: 1rem; padding: 0.5rem 1.5rem; font-size: 0.9rem;">
+          Solicitar Orçamento
+        </a>
+      </div>
+
+      <div class="highlight-card">
+        <i class="fab fa-whatsapp icon" style="color: #25D366;"></i>
+        <h3>WhatsApp Direto</h3>
+        <p>Fale conosco agora mesmo pelo WhatsApp para atendimento rápido.</p>
+        <a href="https://wa.me/258870779922?text=Olá!%20Preciso%20de%20ajuda." 
+           class="btn" target="_blank"
+           style="margin-top: 1rem; padding: 0.5rem 1.5rem; font-size: 0.9rem; background: #25D366;">
+          <i class="fab fa-whatsapp"></i> Abrir WhatsApp
+        </a>
+      </div>
+
+      <div class="highlight-card">
+        <i class="fas fa-phone-alt icon"></i>
+        <h3>Ligação Telefónica</h3>
+        <p>Ligue diretamente para nossa central de atendimento durante o horário comercial.</p>
+        <a href="tel:+258870779922" class="btn" 
+           style="margin-top: 1rem; padding: 0.5rem 1.5rem; font-size: 0.9rem;">
+          <i class="fas fa-phone"></i> Ligar Agora
+        </a>
+      </div>
 
     </div>
   </section>
+
+  <!-- FAQ -->
+  <section class="faq-section">
+    <h2>Perguntas Frequentes sobre Contato</h2>
+    <div class="faq-container">
+      
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>Quanto tempo leva para receber resposta?</span>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="faq-answer">
+          Respondemos todas as mensagens em até 24 horas úteis. Mensagens via WhatsApp geralmente são respondidas mais rapidamente, durante o horário comercial.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>Qual a melhor forma de contactar?</span>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="faq-answer">
+          Para atendimento rápido, recomendamos WhatsApp ou ligação telefónica. Para orçamentos detalhados, utilize o formulário de orçamento em nossa página dedicada.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>Atendem fora do horário comercial?</span>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="faq-answer">
+          Nosso horário de atendimento é de segunda a sexta das 08:00 às 17:00 e sábado das 08:00 às 12:00. Mensagens recebidas fora deste horário serão respondidas no próximo dia útil.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>Fazem visitas técnicas gratuitas?</span>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="faq-answer">
+          Sim! Para projetos em Nampula e arredores, realizamos visitas técnicas gratuitas mediante agendamento prévio. Para outras localidades, consulte-nos.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>Posso visitar o escritório pessoalmente?</span>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="faq-answer">
+          Certamente! Nosso escritório está localizado em Nampula, Bairro Central. Recomendamos agendar previamente para garantir atendimento personalizado.
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="stats-section" style="padding: 3rem 5%;">
+    <div style="text-align: center; max-width: 800px; margin: 0 auto;">
+      <h2 style="color: #fff; font-size: 2.5rem; margin-bottom: 1.5rem;">
+        Estamos Aqui Para Ajudar!
+      </h2>
+      <p style="color: #fff; font-size: 1.2rem; margin-bottom: 2rem; opacity: 0.9;">
+        Não importa o tamanho do seu projeto, estamos prontos para transformar suas ideias em realidade.
+      </p>
+      <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+        <a href="orcamento.html" class="btn" style="background: #f7a32b; padding: 1rem 2.5rem; font-size: 1.1rem;">
+          <i class="fas fa-file-invoice"></i> Pedir Orçamento
+        </a>
+        <a href="portfolio.html" class="btn" style="background: #fff; color: #222; padding: 1rem 2.5rem; font-size: 1.1rem;">
+          <i class="fas fa-images"></i> Ver Projetos
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- WhatsApp Flutuante -->
+  <a href="https://wa.me/258870779922?text=Olá!%20Gostaria%20de%20falar%20com%20a%20Elite%20Builders." 
+     class="whatsapp-float" target="_blank" aria-label="Falar no WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
 
   <footer id="site-footer">
     <div class="footer-content">
@@ -63,13 +274,13 @@
         <p>Email: <a href="mailto:gentilfranciscomaia@gmail.com">gentilfranciscomaia@gmail.com</a></p>
       </div>
       <div class="footer-column">
-        <h5>Links Rápidos</h5>
+        <h5>Áreas de Atuação</h5>
         <ul>
-          <li><a href="servicos.html">Serviços</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="orcamento.html">Pedir Orçamento</a></li>
-          <li><a href="sobre.html">Sobre Nós</a></li>
-          <li><a href="contatos.html">Contactos</a></li>
+          <li>Edifícios e Monumentos</li>
+          <li>Furos de Água</li>
+          <li>Estradas e Pavimentação</li>
+          <li>Reservatórios e Hidráulica</li>
+          <li>Urbanização e Limpeza de Terrenos</li>
         </ul>
       </div>
     </div>
@@ -83,11 +294,9 @@
     </div>
   </footer>
 
-  <script src="https://cdn.emailjs.com/sdk/3.2/email.min.js"></script>
-
-<!-- Biblioteca EmailJS -->
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-
+  <!-- EmailJS -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
   <script src="js/menu.js"></script>
+
 </body>
 </html>
