@@ -1,14 +1,21 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Elite Builders | Serviços</title>
+  <meta name="description" content="Conheça nossos serviços: construção de edifícios, obras públicas, estradas, furos de água, reservatórios. Qualidade garantida. Elite Builders Moçambique.">
+  <meta name="keywords" content="serviços construção, edifícios, obras públicas, estradas, furos água, Nampula">
   <link rel="stylesheet" href="css/styles.css">
-  <script src="js/menu.js" defer></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body>
+
+  <!-- Preloader -->
+  <div class="preloader">
+    <img src="img/logo-oficial.png" alt="Loading" class="preloader-logo" />
+  </div>
 
   <header>
     <div class="logo fade-in">
@@ -20,6 +27,7 @@
     <nav class="nav-menu fade-in delay-1" id="nav-menu">
       <a href="index.html">Lar</a>
       <a href="servicos.html" class="active">Serviços</a>
+      <a href="portfolio.html">Portfolio</a>
       <a href="sobre.html">Sobre Nós</a>
       <a href="contatos.html">Contatos</a>
     </nav>
@@ -30,69 +38,362 @@
   </header>
 
   <section class="page-header">
-    <h1>Nossos Serviços</h1>
-    <p>Do projeto à execução, oferecemos soluções completas em construção civil.</p>
+    <h1 class="titulo-centralizado fade-in">Nossos Serviços</h1>
+    <p class="fade-in delay-1">Do projeto à execução, oferecemos soluções completas em construção civil.</p>
   </section>
 
+  <!-- Serviços Principais -->
   <section class="services-grid">
-    <!-- Construção de Edifícios -->
+    
+    <!-- 1. Construção de Edifícios -->
     <article class="service-card fade-in delay-2">
       <div class="img-slider">
-        <img src="img/edificio.jpg" class="active" alt="Construção de Edifícios">
-        <img src="img/edificio3.jpg" alt="Construção de Edifícios">
-        <img src="img/edificio-lateral1.jpg" alt="Construção de Edifícios">
-        <img src="img/edificio-lateral2.jpg" alt="Construção de Edifícios">
-        <img src="img/edificio-tras.jpg" alt="Construção de Edifícios">
+        <img src="img/edificio.jpg" class="active" alt="Construção de Edifícios" loading="lazy">
+        <img src="img/edificio3.jpg" alt="Construção de Edifícios" loading="lazy">
+        <img src="img/edificio-lateral1.jpg" alt="Construção de Edifícios" loading="lazy">
+        <img src="img/edificio-lateral2.jpg" alt="Construção de Edifícios" loading="lazy">
+        <img src="img/edificio-tras.jpg" alt="Construção de Edifícios" loading="lazy">
       </div>
       <div class="content">
         <i class="fas fa-building"></i>
         <h3>Construção de Edifícios</h3>
-        <p>Projetos comerciais e residenciais com padrões internacionais.</p>
+        <p>Projetos residenciais, comerciais e institucionais com padrões internacionais de qualidade.</p>
+        <a href="#edificios-detalhes" class="btn" style="margin-top: 1rem; padding: 0.5rem 1.5rem; font-size: 0.9rem;">Saiba Mais</a>
       </div>
     </article>
 
-    <!-- Infraestruturas -->
+    <!-- 2. Obras Públicas e Infraestruturas -->
     <article class="service-card fade-in delay-3">
       <div class="img-slider">
-        <img src="img/h_trabalhando.jpg" class="active" alt="Infraestruturas">
-        <img src="img/instituto-industrial-nampula.jpg" alt="Reparação do Instituto Industrial de Nampula">
-        <img src="img/infra.jpg" alt="Infraestruturas">
+        <img src="img/h_trabalhando.jpg" class="active" alt="Obras Públicas" loading="lazy">
+        <img src="img/instituto-industrial-nampula.jpg" alt="Instituto Industrial de Nampula" loading="lazy">
+        <img src="img/infra.jpg" alt="Infraestruturas" loading="lazy">
+      </div>
+      <div class="content">
+        <i class="fas fa-landmark"></i>
+        <h3>Obras Públicas</h3>
+        <p>Execução de obras de infraestrutura pública com transparência e qualidade comprovada.</p>
+        <a href="#obras-publicas-detalhes" class="btn" style="margin-top: 1rem; padding: 0.5rem 1.5rem; font-size: 0.9rem;">Saiba Mais</a>
+      </div>
+    </article>
+
+    <!-- 3. Estradas e Pavimentação -->
+    <article class="service-card fade-in delay-4">
+      <div class="img-slider">
+        <img src="img/via.jpg" class="active" alt="Estradas e Pavimentação" loading="lazy">
+        <img src="img/ponte.jpg" alt="Construção de Ponte" loading="lazy">
+        <img src="img/ponte2.jpg" alt="Ponte em construção" loading="lazy">
+        <img src="img/ponte3.jpg" alt="Ponte finalizada" loading="lazy">
       </div>
       <div class="content">
         <i class="fas fa-road"></i>
-        <h3>Infraestruturas</h3>
-        <p>Estradas, pavimentação e obras públicas de alta qualidade.</p>
+        <h3>Estradas e Pavimentação</h3>
+        <p>Construção e reabilitação de estradas, pontes e vias urbanas de alta qualidade.</p>
+        <a href="#estradas-detalhes" class="btn" style="margin-top: 1rem; padding: 0.5rem 1.5rem; font-size: 0.9rem;">Saiba Mais</a>
       </div>
     </article>
 
-    <!-- Furos de Água -->
-    <article class="service-card fade-in delay-4">
+    <!-- 4. Furos de Água -->
+    <article class="service-card fade-in delay-5">
       <div class="img-slider">
-        <img src="img/furo_agua.jpg" class="active" alt="Furos de Água">
-        <img src="img/furo-para-água-5763731.jpg" alt="Furos de Água">
-          </div>
+        <img src="img/furo_agua.jpg" class="active" alt="Furos de Água" loading="lazy">
+        <img src="img/furo-para-água-5763731.jpg" alt="Perfuração de Poço" loading="lazy">
+      </div>
       <div class="content">
         <i class="fas fa-tint"></i>
         <h3>Furos de Água</h3>
-        <p>Soluções de perfuração e abastecimento confiável.</p>
+        <p>Perfuração de furos artesianos com equipamentos modernos e análise de qualidade garantida.</p>
+        <a href="#furos-detalhes" class="btn" style="margin-top: 1rem; padding: 0.5rem 1.5rem; font-size: 0.9rem;">Saiba Mais</a>
       </div>
     </article>
 
-    <!-- Urbanização -->
-    <article class="service-card fade-in delay-5">
+    <!-- 5. Reservatórios -->
+    <article class="service-card fade-in delay-6">
       <div class="img-slider">
-        <img src="img/via.jpg" class="active" alt="Urbanização">
-        <img src="img/ponte.jpg" alt="Ponte em construção 1">
-        <img src="/img/ponte2.jpg" alt="ponte em construção">
-        <img src="/img/ponte3.jpg" alt="ponte em construção">
+        <img src="https://placehold.co/600x400/3498db/fff?text=Reservatorio" class="active" alt="Reservatórios" loading="lazy">
+      </div>
+      <div class="content">
+        <i class="fas fa-water"></i>
+        <h3>Reservatórios e Hidráulica</h3>
+        <p>Construção de reservatórios elevados e enterrados para armazenamento de água potável.</p>
+        <a href="#reservatorios-detalhes" class="btn" style="margin-top: 1rem; padding: 0.5rem 1.5rem; font-size: 0.9rem;">Saiba Mais</a>
+      </div>
+    </article>
+
+    <!-- 6. Urbanização -->
+    <article class="service-card fade-in delay-7">
+      <div class="img-slider">
+        <img src="https://placehold.co/600x400/27ae60/fff?text=Urbanizacao" class="active" alt="Urbanização" loading="lazy">
       </div>
       <div class="content">
         <i class="fas fa-city"></i>
-        <h3>Urbanização</h3>
-        <p>Planejamento urbano com foco na sustentabilidade.</p>
+        <h3>Urbanização e Limpeza</h3>
+        <p>Preparação de terrenos, limpeza, nivelamento e infraestrutura urbana completa.</p>
+        <a href="#urbanizacao-detalhes" class="btn" style="margin-top: 1rem; padding: 0.5rem 1.5rem; font-size: 0.9rem;">Saiba Mais</a>
       </div>
     </article>
+
+    <!-- 7. Fornecimento de Materiais -->
+    <article class="service-card fade-in delay-8">
+      <div class="img-slider">
+        <img src="https://placehold.co/600x400/e74c3c/fff?text=Materiais" class="active" alt="Materiais de Construção" loading="lazy">
+      </div>
+      <div class="content">
+        <i class="fas fa-cubes"></i>
+        <h3>Fornecimento de Materiais</h3>
+        <p>Materiais de construção de primeira qualidade com preços competitivos e entrega garantida.</p>
+        <a href="#materiais-detalhes" class="btn" style="margin-top: 1rem; padding: 0.5rem 1.5rem; font-size: 0.9rem;">Saiba Mais</a>
+      </div>
+    </article>
+
+    <!-- 8. Aluguer de Equipamentos -->
+    <article class="service-card fade-in delay-9">
+      <div class="img-slider">
+        <img src="https://placehold.co/600x400/9b59b6/fff?text=Equipamentos" class="active" alt="Aluguer de Equipamentos" loading="lazy">
+      </div>
+      <div class="content">
+        <i class="fas fa-tools"></i>
+        <h3>Aluguer de Equipamentos</h3>
+        <p>Equipamentos profissionais para locação: retroescavadeiras, tratores, betoneiras e mais.</p>
+        <a href="#aluguer-detalhes" class="btn" style="margin-top: 1rem; padding: 0.5rem 1.5rem; font-size: 0.9rem;">Saiba Mais</a>
+      </div>
+    </article>
+
   </section>
+
+  <!-- Seção de Detalhes dos Serviços -->
+  <section class="sobre-nos fade-in" style="background: #f9f9f9;">
+    <div class="container">
+      <h2 class="titulo-centralizado">Detalhes dos Nossos Serviços</h2>
+
+      <!-- Construção de Edifícios -->
+      <div id="edificios-detalhes" class="conteudo-justificado" style="margin-bottom: 3rem; padding: 2rem; background: white; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08);">
+        <h3 style="color: #f7a32b; margin-bottom: 1rem;">
+          <i class="fas fa-building"></i> Construção de Edifícios
+        </h3>
+        <p>
+          Realizamos construção de edifícios residenciais, comerciais e institucionais com padrões internacionais de qualidade. Nossa equipe acompanha desde a fundação até o acabamento final, garantindo excelência em cada etapa.
+        </p>
+        <h4 style="color: #222; margin-top: 1.5rem;">Serviços Incluídos:</h4>
+        <ul>
+          <li>Projeto arquitetônico e estrutural completo</li>
+          <li>Fundações profundas e rasas</li>
+          <li>Estrutura em concreto armado</li>
+          <li>Alvenaria e revestimentos</li>
+          <li>Instalações elétricas e hidráulicas</li>
+          <li>Acabamentos (pintura, pisos, tetos, gesso)</li>
+          <li>Esquadrias (portas e janelas)</li>
+          <li>Paisagismo e áreas externas</li>
+        </ul>
+        <p style="margin-top: 1rem;">
+          <strong>Prazo médio:</strong> 8-15 meses | 
+          <strong>Garantia:</strong> 5 anos estrutural, 1 ano acabamentos
+        </p>
+      </div>
+
+      <!-- Obras Públicas -->
+      <div id="obras-publicas-detalhes" class="conteudo-justificado" style="margin-bottom: 3rem; padding: 2rem; background: white; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08);">
+        <h3 style="color: #f7a32b; margin-bottom: 1rem;">
+          <i class="fas fa-landmark"></i> Obras Públicas e Infraestruturas
+        </h3>
+        <p>
+          Executamos obras de infraestrutura pública com total transparência e conformidade com normas governamentais. Experiência comprovada em escolas, postos de saúde, edifícios administrativos e infraestrutura urbana.
+        </p>
+        <h4 style="color: #222; margin-top: 1.5rem;">Projetos Realizados:</h4>
+        <ul>
+          <li>Escolas primárias e secundárias</li>
+          <li>Postos de saúde e hospitais</li>
+          <li>Edifícios governamentais</li>
+          <li>Centros comunitários</li>
+          <li>Infraestrutura sanitária</li>
+          <li>Sistemas de abastecimento de água</li>
+        </ul>
+        <p style="margin-top: 1rem;">
+          <strong>Prazo médio:</strong> 10-24 meses | 
+          <strong>Garantia:</strong> Conforme contrato público
+        </p>
+      </div>
+
+      <!-- Estradas e Pavimentação -->
+      <div id="estradas-detalhes" class="conteudo-justificado" style="margin-bottom: 3rem; padding: 2rem; background: white; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08);">
+        <h3 style="color: #f7a32b; margin-bottom: 1rem;">
+          <i class="fas fa-road"></i> Estradas e Pavimentação
+        </h3>
+        <p>
+          Especialistas em construção e reabilitação de estradas, ruas urbanas e vias rurais. Utilizamos equipamentos modernos e técnicas avançadas de compactação e pavimentação.
+        </p>
+        <h4 style="color: #222; margin-top: 1.5rem;">Serviços de Pavimentação:</h4>
+        <ul>
+          <li>Terraplanagem e compactação de solo</li>
+          <li>Construção de base e sub-base</li>
+          <li>Pavimentação asfáltica (asfalto quente e frio)</li>
+          <li>Pavimentação em saibro compactado</li>
+          <li>Construção de pontes e pontilhões</li>
+          <li>Drenagem pluvial completa</li>
+          <li>Sinalização horizontal e vertical</li>
+          <li>Iluminação pública LED</li>
+        </ul>
+        <p style="margin-top: 1rem;">
+          <strong>Prazo médio:</strong> 4-12 meses | 
+          <strong>Garantia:</strong> 3 anos
+        </p>
+      </div>
+
+      <!-- Furos de Água -->
+      <div id="furos-detalhes" class="conteudo-justificado" style="margin-bottom: 3rem; padding: 2rem; background: white; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08);">
+        <h3 style="color: #f7a32b; margin-bottom: 1rem;">
+          <i class="fas fa-tint"></i> Furos de Água
+        </h3>
+        <p>
+          Perfuração de furos artesianos e semi-artesianos com equipamentos de última geração. Garantimos água de qualidade através de análise prévia do solo e testes de vazão.
+        </p>
+        <h4 style="color: #222; margin-top: 1.5rem;">Processo Completo:</h4>
+        <ul>
+          <li>Estudo hidrogeológico do terreno</li>
+          <li>Perfuração até lençol freático (profundidade até 150m)</li>
+          <li>Revestimento com tubos PVC ou aço galvanizado</li>
+          <li>Instalação de bomba submersível de alta qualidade</li>
+          <li>Análise laboratorial da qualidade da água</li>
+          <li>Sistema de distribuição e armazenamento</li>
+          <li>Manutenção preventiva inclusa</li>
+        </ul>
+        <p style="margin-top: 1rem;">
+          <strong>Prazo médio:</strong> 1-3 semanas | 
+          <strong>Garantia:</strong> 2 anos
+        </p>
+      </div>
+
+      <!-- Reservatórios -->
+      <div id="reservatorios-detalhes" class="conteudo-justificado" style="margin-bottom: 3rem; padding: 2rem; background: white; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08);">
+        <h3 style="color: #f7a32b; margin-bottom: 1rem;">
+          <i class="fas fa-water"></i> Reservatórios e Sistemas Hidráulicos
+        </h3>
+        <p>
+          Construção de reservatórios elevados e enterrados para armazenamento de água potável. Projetos dimensionados conforme necessidade e população atendida.
+        </p>
+        <h4 style="color: #222; margin-top: 1.5rem;">Especificações:</h4>
+        <ul>
+          <li>Reservatórios elevados (capacidade 10m³ a 500m³)</li>
+          <li>Reservatórios enterrados (capacidade até 1.000m³)</li>
+          <li>Projeto estrutural com cálculo de demanda</li>
+          <li>Estrutura em concreto armado de alta resistência</li>
+          <li>Impermeabilização com manta asfáltica</li>
+          <li>Tampa de inspeção e escada de acesso</li>
+          <li>Tubulações de entrada, saída e extravasor</li>
+          <li>Sistema de cloração automático</li>
+        </ul>
+        <p style="margin-top: 1rem;">
+          <strong>Prazo médio:</strong> 2-6 meses | 
+          <strong>Garantia:</strong> 5 anos
+        </p>
+      </div>
+
+      <!-- Urbanização -->
+      <div id="urbanizacao-detalhes" class="conteudo-justificado" style="margin-bottom: 3rem; padding: 2rem; background: white; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08);">
+        <h3 style="color: #f7a32b; margin-bottom: 1rem;">
+          <i class="fas fa-city"></i> Urbanização e Limpeza de Terrenos
+        </h3>
+        <p>
+          Preparação completa de terrenos para construção ou agricultura. Serviços de limpeza, nivelamento, drenagem e infraestrutura básica.
+        </p>
+        <h4 style="color: #222; margin-top: 1.5rem;">Serviços de Urbanização:</h4>
+        <ul>
+          <li>Limpeza de vegetação e remoção de árvores</li>
+          <li>Remoção de entulho e resíduos</li>
+          <li>Terraplanagem e nivelamento do terreno</li>
+          <li>Sistema de drenagem superficial</li>
+          <li>Delimitação e demarcação de lotes</li>
+          <li>Abertura de vias de acesso internas</li>
+          <li>Preparação de solo para jardins</li>
+          <li>Instalação de postes e iluminação</li>
+        </ul>
+        <p style="margin-top: 1rem;">
+          <strong>Prazo médio:</strong> 2-8 semanas | 
+          <strong>Garantia:</strong> 1 ano
+        </p>
+      </div>
+
+      <!-- Fornecimento de Materiais -->
+      <div id="materiais-detalhes" class="conteudo-justificado" style="margin-bottom: 3rem; padding: 2rem; background: white; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08);">
+        <h3 style="color: #f7a32b; margin-bottom: 1rem;">
+          <i class="fas fa-cubes"></i> Fornecimento de Materiais de Construção
+        </h3>
+        <p>
+          Fornecemos materiais de construção de primeira qualidade com preços competitivos. Parceria com os melhores fornecedores nacionais e internacionais.
+        </p>
+        <h4 style="color: #222; margin-top: 1.5rem;">Produtos Disponíveis:</h4>
+        <ul>
+          <li><strong>Materiais Básicos:</strong> Cimento, areia, pedra, saibro</li>
+          <li><strong>Blocos e Tijolos:</strong> Diversos tipos e tamanhos</li>
+          <li><strong>Ferro e Aço:</strong> Vergalhões, malhas, perfis</li>
+          <li><strong>Madeira:</strong> Tábuas, vigas, compensados</li>
+          <li><strong>Acabamentos:</strong> Tintas, vernizes, massa corrida</li>
+          <li><strong>Pisos:</strong> Cerâmica, porcelanato, granito</li>
+          <li><strong>Revestimentos:</strong> Azulejos, pastilhas, pedras</li>
+          <li><strong>Material Elétrico:</strong> Cabos, disjuntores, tomadas</li>
+          <li><strong>Material Hidráulico:</strong> Tubos, conexões, registros</li>
+          <li><strong>Ferramentas:</strong> Equipamentos profissionais</li>
+        </ul>
+        <p style="margin-top: 1rem;">
+          <strong>Entrega:</strong> Em todo Moçambique | 
+          <strong>Pagamento:</strong> À vista ou parcelado
+        </p>
+      </div>
+
+      <!-- Aluguer de Equipamentos -->
+      <div id="aluguer-detalhes" class="conteudo-justificado" style="padding: 2rem; background: white; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08);">
+        <h3 style="color: #f7a32b; margin-bottom: 1rem;">
+          <i class="fas fa-tools"></i> Aluguer de Equipamentos
+        </h3>
+        <p>
+          Disponibilizamos equipamentos profissionais para locação com ou sem operador. Manutenção garantida e preços competitivos por hora, dia ou mês.
+        </p>
+        <h4 style="color: #222; margin-top: 1.5rem;">Equipamentos Disponíveis:</h4>
+        <ul>
+          <li><strong>Máquinas Pesadas:</strong> Retroescavadeiras, escavadeiras hidráulicas</li>
+          <li><strong>Tratores:</strong> Diversos modelos e potências</li>
+          <li><strong>Caminhões:</strong> Basculantes 6m³ a 14m³</li>
+          <li><strong>Betoneiras:</strong> 150L a 400L</li>
+          <li><strong>Compactadores:</strong> Rolos compressores, sapos</li>
+          <li><strong>Geradores:</strong> 5kVA a 100kVA</li>
+          <li><strong>Andaimes:</strong> Metálicos modulares</li>
+          <li><strong>Ferramentas:</strong> Furadeiras, serras, vibradores</li>
+          <li><strong>Bombas:</strong> Água, concreto, lama</li>
+        </ul>
+        <p style="margin-top: 1rem;">
+          <strong>Condições:</strong> Diária, semanal ou mensal | 
+          <strong>Operador:</strong> Incluso ou não (a escolher)
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="stats-section" style="padding: 3rem 5%;">
+    <div style="text-align: center; max-width: 800px; margin: 0 auto;">
+      <h2 style="color: #fff; font-size: 2.5rem; margin-bottom: 1.5rem;">
+        Pronto para Iniciar seu Projeto?
+      </h2>
+      <p style="color: #fff; font-size: 1.2rem; margin-bottom: 2rem; opacity: 0.9;">
+        Entre em contato conosco e receba um orçamento gratuito e sem compromisso em até 24 horas!
+      </p>
+      <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+        <a href="orcamento.html" class="btn" style="background: #f7a32b; padding: 1rem 2.5rem; font-size: 1.1rem;">
+          <i class="fas fa-file-invoice"></i> Solicitar Orçamento
+        </a>
+        <a href="contatos.html" class="btn" style="background: #fff; color: #222; padding: 1rem 2.5rem; font-size: 1.1rem;">
+          <i class="fas fa-phone"></i> Falar Conosco
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- WhatsApp Flutuante -->
+  <a href="https://wa.me/258870779922?text=Olá!%20Gostaria%20de%20mais%20informações%20sobre%20os%20serviços." 
+     class="whatsapp-float" target="_blank" aria-label="Falar no WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
 
   <footer id="site-footer">
     <div class="footer-content">
@@ -107,13 +408,13 @@
         <p>Email: <a href="mailto:gentilfranciscomaia@gmail.com">gentilfranciscomaia@gmail.com</a></p>
       </div>
       <div class="footer-column">
-        <h5>Áreas de Atuação</h5>
+        <h5>Links Rápidos</h5>
         <ul>
-          <li>Edifícios e Monumentos</li>
-          <li>Furos de Água</li>
-          <li>Estradas e Pavimentação</li>
-          <li>Reservatórios e Hidráulica</li>
-          <li>Urbanização e Limpeza de Terrenos</li>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="servicos.html">Serviços</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="orcamento.html">Pedir Orçamento</a></li>
+          <li><a href="contatos.html">Contactos</a></li>
         </ul>
       </div>
     </div>
@@ -126,5 +427,8 @@
       </div>
     </div>
   </footer>
+
+  <script src="js/menu.js"></script>
+
 </body>
 </html>
