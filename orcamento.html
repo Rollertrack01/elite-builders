@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Elite Builders | Pedir Orçamento</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- Preloader -->
+  <div class="preloader">
+    <img src="img/logo-oficial.png" alt="Loading" class="preloader-logo" />
+  </div>
+
+  <header>
+    <div class="logo fade-in">
+      <a href="index.html"><img src="img/logo-oficial.png" alt="Elite Builders Logo" /></a>
+    </div>
+
+    <nav class="nav-menu fade-in delay-1" id="nav-menu">
+      <a href="index.html">Lar</a>
+      <a href="servicos.html">Serviços</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="sobre.html">Sobre Nós</a>
+      <a href="contatos.html">Contatos</a>
+    </nav>
+
+    <button class="nav-toggle fade-in delay-2" id="nav-toggle" aria-label="Abrir menu">
+      <i class="fas fa-bars"></i>
+    </button>
+  </header>
+
+  <section class="page-header">
+    <h1 class="titulo-centralizado fade-in">Solicite seu Orçamento</h1>
+    <p class="fade-in delay-1">Preencha o formulário e entraremos em contato em até 24 horas.</p>
+  </section>
+
+  <section class="contact-section fade-in delay-2">
+    <div class="contact-box">
+      <h2>Formulário de Orçamento</h2>
+      <form id="orcamento-form">
+        <label for="nome">Nome Completo *</label>
+        <input type="text" id="nome" name="nome" required />
+
+        <label for="email">Email *</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="telefone">Telefone/WhatsApp *</label>
+        <input type="tel" id="telefone" name="telefone" required />
+
+        <label for="servico">Tipo de Serviço *</label>
+        <select id="servico" name="servico" required>
+          <option value="">Selecione...</option>
+          <option value="edificios">Construção de Edifícios</option>
+          <option value="obras-publicas">Obras Públicas</option>
+          <option value="estradas">Estradas e Pavimentação</option>
+          <option value="furos">Furos de Água</option>
+          <option value="reservatorios">Reservatórios</option>
+          <option value="urbanizacao">Urbanização e Limpeza</option>
+          <option value="materiais">Fornecimento de Materiais</option>
+          <option value="aluguer">Aluguer de Equipamentos</option>
+          <option value="outro">Outro</option>
+        </select>
+
+        <label for="area">Área Aproximada (m²)</label>
+        <input type="text" id="area" name="area" placeholder="Ex: 500m²" />
+
+        <label for="localizacao">Localização do Projeto *</label>
+        <input type="text" id="localizacao" name="localizacao" required placeholder="Cidade, Bairro" />
+
+        <label for="prazo">Prazo Desejado</label>
+        <input type="text" id="prazo" name="prazo" placeholder="Ex: 6 meses, urgente" />
+
+        <label for="detalhes">Detalhes do Projeto *</label>
+        <textarea id="detalhes" name="detalhes" rows="5" required placeholder="Descreva seu projeto..."></textarea>
+
+        <button type="submit" class="btn">Enviar Pedido de Orçamento</button>
+      </form>
+    </div>
+
+    <div class="contact-info">
+      <h2>Informações de Contacto</h2>
+      <p><i class="fas fa-phone"></i> Telefone:</p>
+      <p><a href="tel:+258870779922">+258 87 077 9922</a></p>
+
+      <p><i class="fas fa-envelope"></i> Email:</p>
+      <p><a href="mailto:gentilfranciscomaia@gmail.com">gentilfranciscomaia@gmail.com</a></p>
+
+      <p><i class="fas fa-map-marker-alt"></i> Localização:</p>
+      <p>Nampula, Moçambique<br>Bairro Central</p>
+
+      <div class="social-icons">
+        <a href="https://wa.me/258870779922" target="_blank" aria-label="WhatsApp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="#" target="_blank" aria-label="Facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+        <a href="#" target="_blank" aria-label="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+
+      <div style="margin-top: 2rem; padding: 1.5rem; background: #f9f9f9; border-radius: 8px;">
+        <h3 style="margin-bottom: 1rem; color: #f7a32b;">
+          <i class="fas fa-clock"></i> Horário de Atendimento
+        </h3>
+        <p><strong>Segunda a Sexta:</strong> 08:00 - 17:00</p>
+        <p><strong>Sábado:</strong> 08:00 - 12:00</p>
+        <p><strong>Domingo:</strong> Fechado</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq-section">
+    <h2>Perguntas Frequentes sobre Orçamentos</h2>
+    <div class="faq-container">
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>Quanto tempo leva para receber o orçamento?</span>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="faq-answer">
+          Após receber seu pedido, nossa equipe analisará as informações e enviará um orçamento detalhado em até 24-48 horas úteis.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>O orçamento tem algum custo?</span>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="faq-answer">
+          Não! Todos os nossos orçamentos são completamente gratuitos e sem compromisso.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>Fazem obras fora de Nampula?</span>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="faq-answer">
+          Sim! Atendemos todo o território de Moçambique. Entre em contato conosco com os detalhes da localização.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>Vocês fornecem os materiais de construção?</span>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="faq-answer">
+          Sim, podemos fornecer todos os materiais necessários para a obra, garantindo qualidade e preços competitivos.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>Qual é o prazo médio para conclusão de uma obra?</span>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="faq-answer">
+          O prazo varia conforme o tipo e tamanho do projeto. Edifícios residenciais levam em média 6-12 meses, enquanto projetos menores podem ser concluídos em 2-4 meses.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WhatsApp Flutuante -->
+  <a href="https://wa.me/258870779922?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento." 
+     class="whatsapp-float" target="_blank" aria-label="Falar no WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <footer id="site-footer">
+    <div class="footer-content">
+      <div class="footer-column">
+        <h4>Elite Builders</h4>
+        <p>Construção Civil e Obras Públicas</p>
+      </div>
+      <div class="footer-column">
+        <h5>Contactos</h5>
+        <p>Sede: Nampula, Moçambique<br>Bairro: Central</p>
+        <p>Telefone: +258 87 077 9922</p>
+        <p>Email: <a href="mailto:gentilfranciscomaia@gmail.com">gentilfranciscomaia@gmail.com</a></p>
+      </div>
+      <div class="footer-column">
+        <h5>Links Rápidos</h5>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="servicos.html">Serviços</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="orcamento.html">Pedir Orçamento</a></li>
+          <li><a href="contatos.html">Contactos</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-left">
+        <p>Desenvolvido por Rollertrack</p>
+      </div>
+      <div class="footer-right">
+        <p>&copy;
