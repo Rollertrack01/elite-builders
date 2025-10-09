@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Elite Builders | Portfolio</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- Preloader -->
+  <div class="preloader">
+    <img src="img/logo-oficial.png" alt="Loading" class="preloader-logo" />
+  </div>
+
+  <header>
+    <div class="logo fade-in">
+      <a href="index.html"><img src="img/logo-oficial.png" alt="Elite Builders Logo" /></a>
+    </div>
+
+    <nav class="nav-menu fade-in delay-1" id="nav-menu">
+      <a href="index.html">Lar</a>
+      <a href="servicos.html">Serviços</a>
+      <a href="portfolio.html" class="active">Portfolio</a>
+      <a href="sobre.html">Sobre Nós</a>
+      <a href="contatos.html">Contatos</a>
+    </nav>
+
+    <button class="nav-toggle fade-in delay-2" id="nav-toggle" aria-label="Abrir menu">
+      <i class="fas fa-bars"></i>
+    </button>
+  </header>
+
+  <section class="page-header">
+    <h1 class="titulo-centralizado fade-in">Nossos Projetos</h1>
+    <p class="fade-in delay-1">Confira alguns dos trabalhos que realizamos com excelência.</p>
+  </section>
+
+  <section class="portfolio-section fade-in delay-2">
+    <div class="portfolio-filters">
+      <button class="filter-btn active" data-filter="todos">Todos</button>
+      <button class="filter-btn" data-filter="edificios">Edifícios</button>
+      <button class="filter-btn" data-filter="estradas">Estradas</button>
+      <button class="filter-btn" data-filter="furos">Furos de Água</button>
+      <button class="filter-btn" data-filter="reservatorios">Reservatórios</button>
+    </div>
+
+    <div class="portfolio-grid">
+      <!-- Projeto 1 -->
+      <div class="portfolio-item" data-category="edificios">
+        <img src="img/projeto1.jpg" alt="Edifício Residencial" />
+        <div class="portfolio-overlay">
+          <h3>Edifício Residencial Central</h3>
+          <p>Nampula • 2024 • 12 meses</p>
+        </div>
+      </div>
+
+      <!-- Projeto 2 -->
+      <div class="portfolio-item" data-category="estradas">
+        <img src="img/projeto2.jpg" alt="Pavimentação de Estrada" />
+        <div class="portfolio-overlay">
+          <h3>Pavimentação Avenida Principal</h3>
+          <p>Nampula • 2023 • 8 meses</p>
+        </div>
+      </div>
+
+      <!-- Projeto 3 -->
+      <div class="portfolio-item" data-category="furos">
+        <img src="img/projeto3.jpg" alt="Furo de Água" />
+        <div class="portfolio-overlay">
+          <h3>Furo de Água Comunidade Rural</h3>
+          <p>Meconta • 2024 • 2 meses</p>
+        </div>
+      </div>
+
+      <!-- Projeto 4 -->
+      <div class="portfolio-item" data-category="edificios">
+        <img src="img/projeto4.jpg" alt="Edifício Comercial" />
+        <div class="portfolio-overlay">
+          <h3>Centro Comercial Elite</h3>
+          <p>Nampula • 2023 • 15 meses</p>
+        </div>
+      </div>
+
+      <!-- Projeto 5 -->
+      <div class="portfolio-item" data-category="reservatorios">
+        <img src="img/projeto5.jpg" alt="Reservatório" />
+        <div class="portfolio-overlay">
+          <h3>Reservatório de Água 500m³</h3>
+          <p>Nampula • 2024 • 4 meses</p>
+        </div>
+      </div>
+
+      <!-- Projeto 6 -->
+      <div class="portfolio-item" data-category="estradas">
+        <img src="img/projeto6.jpg" alt="Estrada Rural" />
+        <div class="portfolio-overlay">
+          <h3>Estrada de Acesso Rural</h3>
+          <p>Monapo • 2023 • 6 meses</p>
+        </div>
+      </div>
+
+      <!-- Adicione mais projetos conforme necessário -->
+    </div>
+  </section>
+
+  <!-- Estatísticas -->
+  <section class="stats-section">
+    <div class="stats-grid">
+      <div class="stat-card">
+        <i class="fas fa-project-diagram stat-icon"></i>
+        <div class="stat-number" data-target="150">0+</div>
+        <div class="stat-label">Projetos Concluídos</div>
+      </div>
+      <div class="stat-card">
+        <i class="fas fa-users stat-icon"></i>
+        <div class="stat-number" data-target="200">0+</div>
+        <div class="stat-label">Clientes Satisfeitos</div>
+      </div>
+      <div class="stat-card">
+        <i class="fas fa-calendar-alt stat-icon"></i>
+        <div class="stat-number" data-target="15">0+</div>
+        <div class="stat-label">Anos de Experiência</div>
+      </div>
+      <div class="stat-card">
+        <i class="fas fa-hard-hat stat-icon"></i>
+        <div class="stat-number" data-target="50">0+</div>
+        <div class="stat-label">Profissionais</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WhatsApp Flutuante -->
+  <a href="https://wa.me/258870779922?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento." 
+     class="whatsapp-float" target="_blank" aria-label="Falar no WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <footer id="site-footer">
+    <div class="footer-content">
+      <div class="footer-column">
+        <h4>Elite Builders</h4>
+        <p>Construção Civil e Obras Públicas</p>
+      </div>
+      <div class="footer-column">
+        <h5>Contactos</h5>
+        <p>Sede: Nampula, Moçambique<br>Bairro: Central</p>
+        <p>Telefone: +258 87 077 9922</p>
+        <p>Email: <a href="mailto:gentilfranciscomaia@gmail.com">gentilfranciscomaia@gmail.com</a></p>
+      </div>
+      <div class="footer-column">
+        <h5>Links Rápidos</h5>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="servicos.html">Serviços</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="orcamento.html">Pedir Orçamento</a></li>
+          <li><a href="contatos.html">Contactos</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-left">
+        <p>Desenvolvido por Rollertrack</p>
+      </div>
+      <div class="footer-right">
+        <p>&copy; 2025 Elite Builders. Todos os Direitos Reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/menu.js"></script>
+</body>
+</html>
