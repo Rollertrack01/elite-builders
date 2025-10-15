@@ -1,4 +1,4 @@
-/* === Reset Básico === */
+
 * {
   margin: 0;
   padding: 0;
@@ -13,7 +13,6 @@ body {
   min-height: 100vh;
 }
 
-/* === Links === */
 a {
   text-decoration: none;
   color: inherit;
@@ -24,7 +23,6 @@ a:hover {
   color: #f7a32b;
 }
 
-/* === Header === */
 header {
   background-color: #222;
   color: #fff;
@@ -80,7 +78,6 @@ header {
   padding: 0.5rem;
 }
 
-/* === Hero === */
 .hero {
   position: relative;
   background: url('/img/capa.jpg') center/cover no-repeat fixed;
@@ -116,7 +113,6 @@ header {
   text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
 }
 
-/* === Botão primário === */
 .btn {
   background: linear-gradient(135deg, #f7a32b, #f5b84d);
   color: #fff;
@@ -143,7 +139,6 @@ header {
   box-shadow: 0 2px 6px rgba(0,0,0,0.2);
 }
 
-/* === Highlights === */
 .highlights {
   padding: 4rem 5%;
   text-align: center;
@@ -192,7 +187,6 @@ header {
   line-height: 1.5;
 }
 
-/* === Services === */
 .services-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -245,7 +239,6 @@ header {
   margin-bottom: 0.5rem;
 }
 
-/* === About === */
 .about {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -273,7 +266,6 @@ header {
   margin-bottom: 1rem;
 }
 
-/* === Sobre Nós === */
 .sobre-nos .container {
   max-width: 900px;
   margin: 0 auto;
@@ -307,7 +299,6 @@ header {
   color: #222;
 }
 
-/* === Contact === */
 .contact-section {
   display: flex;
   justify-content: center;
@@ -400,9 +391,6 @@ header {
   color: #f7a32b;
 }
 
-/* === NOVOS RECURSOS === */
-
-/* === WhatsApp Flutuante === */
 .whatsapp-float {
   position: fixed;
   bottom: 30px;
@@ -432,7 +420,6 @@ header {
   50% { box-shadow: 0 4px 20px rgba(37, 211, 102, 0.8); }
 }
 
-/* === Botão Voltar ao Topo === */
 .back-to-top {
   position: fixed;
   bottom: 100px;
@@ -461,7 +448,6 @@ header {
   transform: translateY(-5px);
 }
 
-/* === Galeria de Projetos === */
 .portfolio-section {
   padding: 4rem 5%;
   background: #f9f9f9;
@@ -549,7 +535,6 @@ header {
   opacity: 0.9;
 }
 
-/* === Lightbox === */
 .lightbox {
   display: none;
   position: fixed;
@@ -600,7 +585,6 @@ header {
   transform: rotate(90deg);
 }
 
-/* === Depoimentos === */
 .testimonials-section {
   padding: 4rem 5%;
   background: #fff;
@@ -687,7 +671,6 @@ header {
   border-radius: 6px;
 }
 
-/* === Estatísticas === */
 .stats-section {
   background: linear-gradient(135deg, #222, #444);
   color: #fff;
@@ -725,7 +708,6 @@ header {
   color: #f7a32b;
 }
 
-/* === FAQ === */
 .faq-section {
   padding: 4rem 5%;
   background: #f9f9f9;
@@ -789,7 +771,6 @@ header {
   padding: 0 1.5rem 1.5rem;
 }
 
-/* === Preloader === */
 .preloader {
   position: fixed;
   top: 0;
@@ -819,7 +800,6 @@ header {
   50% { transform: scale(1.1) rotate(180deg); }
 }
 
-/* === Footer === */
 footer {
   background: #222;
   color: #ccc;
@@ -882,7 +862,6 @@ footer {
   text-align: right;
 }
 
-/* === Animações === */
 .fade-in {
   opacity: 0;
   transform: translateY(20px);
@@ -911,7 +890,6 @@ footer {
   to { opacity: 1; }
 }
 
-/* === Responsivo === */
 @media (max-width: 992px) {
   .hero-content h1 {
     font-size: 2.2rem;
