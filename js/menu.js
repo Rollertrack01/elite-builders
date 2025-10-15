@@ -1,4 +1,3 @@
-// === Preloader ===
 window.addEventListener('load', () => {
   const preloader = document.querySelector('.preloader');
   if (preloader) {
@@ -8,7 +7,7 @@ window.addEventListener('load', () => {
   }
 });
 
-// === Menu Mobile ===
+
 document.addEventListener('DOMContentLoaded', () => {
   const btnMobile = document.getElementById("nav-toggle");
   const navMenu = document.getElementById("nav-menu");
@@ -20,7 +19,6 @@ document.addEventListener('DOMContentLoaded', () => {
       btnMobile.setAttribute("aria-expanded", !isExpanded);
     });
 
-    // Fechar menu ao clicar em um link
     const navLinks = document.querySelectorAll('.nav-menu a');
     navLinks.forEach(link => {
       link.addEventListener('click', () => {
@@ -31,7 +29,6 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
-// === Animação Scroll ===
 const fadeElements = document.querySelectorAll(".fade-in, .service-item");
 
 function showOnScroll() {
@@ -44,7 +41,6 @@ function showOnScroll() {
 window.addEventListener("scroll", showOnScroll);
 window.addEventListener("load", showOnScroll);
 
-// === Slider de Imagens ===
 document.querySelectorAll('.img-slider').forEach(slider => {
   const images = slider.querySelectorAll('img');
   if (images.length > 0) {
@@ -58,7 +54,8 @@ document.querySelectorAll('.img-slider').forEach(slider => {
   }
 });
 
-// === Botão Voltar ao Topo ===
+
+
 const backToTop = document.createElement('button');
 backToTop.className = 'back-to-top';
 backToTop.innerHTML = '<i class="fas fa-arrow-up"></i>';
@@ -80,7 +77,8 @@ backToTop.addEventListener('click', () => {
   });
 });
 
-// === Contador de Estatísticas ===
+
+
 function animateCounter(element, target, duration = 2000) {
   const start = 0;
   const increment = target / (duration / 16);
@@ -115,7 +113,8 @@ if (statsSection) {
   observerStats.observe(statsSection);
 }
 
-// === Filtro de Portfolio ===
+
+
 const filterButtons = document.querySelectorAll('.filter-btn');
 const portfolioItems = document.querySelectorAll('.portfolio-item');
 
@@ -147,7 +146,8 @@ filterButtons.forEach(button => {
   });
 });
 
-// === Lightbox para Galeria ===
+
+
 const lightbox = document.createElement('div');
 lightbox.className = 'lightbox';
 lightbox.innerHTML = `
@@ -182,7 +182,8 @@ lightbox.addEventListener('click', (e) => {
   }
 });
 
-// === Slider de Depoimentos ===
+
+
 let currentTestimonial = 0;
 const testimonialCards = document.querySelectorAll('.testimonial-card');
 const testimonialDots = document.querySelectorAll('.testimonial-dot');
@@ -218,7 +219,8 @@ if (testimonialCards.length > 0) {
   }, 5000);
 }
 
-// === FAQ Accordion ===
+
+
 const faqItems = document.querySelectorAll('.faq-item');
 
 faqItems.forEach(item => {
@@ -237,7 +239,8 @@ faqItems.forEach(item => {
   });
 });
 
-// === Envio do Formulário via EmailJS ===
+
+
 document.addEventListener('DOMContentLoaded', () => {
   if (typeof emailjs !== 'undefined') {
     emailjs.init('c6wlGTr_puOZynphf');
@@ -274,7 +277,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Formulário de Orçamento
+  
+
   const orcamentoForm = document.getElementById('orcamento-form');
 
   if (orcamentoForm) {
@@ -323,7 +327,8 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
-// === Lazy Loading de Imagens ===
+
+
 if ('IntersectionObserver' in window) {
   const imageObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
@@ -340,7 +345,7 @@ if ('IntersectionObserver' in window) {
   lazyImages.forEach(img => imageObserver.observe(img));
 }
 
-// === Smooth Scroll para Links Internos ===
+
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function(e) {
     const href = this.getAttribute('href');
